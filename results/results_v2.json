@@ -1,0 +1,1874 @@
+{
+  "seed": 20260918,
+  "bootstrap_replicates": 2000,
+  "cohort": {
+    "n": 42383,
+    "events": 7760,
+    "non_events": 34623,
+    "prevalence": 0.1831
+  },
+  "chromosome_partitions": [
+    {
+      "partition": "held_out",
+      "scope": "all",
+      "n": 14021,
+      "events": 2145,
+      "non_events": 11876,
+      "prevalence": 0.153,
+      "auroc": 0.9498,
+      "auroc_lo": 0.9452,
+      "auroc_hi": 0.9543,
+      "auprc": 0.8047,
+      "auprc_lo": 0.7886,
+      "auprc_hi": 0.8211,
+      "auprc_baseline": 0.153,
+      "auprc_lift": 0.6517
+    },
+    {
+      "partition": "held_out",
+      "scope": "missense",
+      "n": 7061,
+      "events": 1468,
+      "non_events": 5593,
+      "prevalence": 0.2079,
+      "auroc": 0.8948,
+      "auroc_lo": 0.8855,
+      "auroc_hi": 0.9041,
+      "auprc": 0.6979,
+      "auprc_lo": 0.6742,
+      "auprc_hi": 0.7228,
+      "auprc_baseline": 0.2079,
+      "auprc_lift": 0.49
+    },
+    {
+      "partition": "validation",
+      "scope": "all",
+      "n": 16483,
+      "events": 3376,
+      "non_events": 13107,
+      "prevalence": 0.2048,
+      "auroc": 0.9601,
+      "auroc_lo": 0.9566,
+      "auroc_hi": 0.9633,
+      "auprc": 0.8666,
+      "auprc_lo": 0.8565,
+      "auprc_hi": 0.877,
+      "auprc_baseline": 0.2048,
+      "auprc_lift": 0.6618
+    },
+    {
+      "partition": "validation",
+      "scope": "missense",
+      "n": 8554,
+      "events": 2329,
+      "non_events": 6225,
+      "prevalence": 0.2723,
+      "auroc": 0.9258,
+      "auroc_lo": 0.9193,
+      "auroc_hi": 0.9318,
+      "auprc": 0.8161,
+      "auprc_lo": 0.7999,
+      "auprc_hi": 0.8308,
+      "auprc_baseline": 0.2723,
+      "auprc_lift": 0.5438
+    },
+    {
+      "partition": "training",
+      "scope": "all",
+      "n": 11879,
+      "events": 2239,
+      "non_events": 9640,
+      "prevalence": 0.1885,
+      "auroc": 0.9574,
+      "auroc_lo": 0.9533,
+      "auroc_hi": 0.9615,
+      "auprc": 0.8494,
+      "auprc_lo": 0.8361,
+      "auprc_hi": 0.8629,
+      "auprc_baseline": 0.1885,
+      "auprc_lift": 0.6609
+    },
+    {
+      "partition": "training",
+      "scope": "missense",
+      "n": 5738,
+      "events": 1681,
+      "non_events": 4057,
+      "prevalence": 0.293,
+      "auroc": 0.9041,
+      "auroc_lo": 0.8955,
+      "auroc_hi": 0.9123,
+      "auprc": 0.7959,
+      "auprc_lo": 0.7777,
+      "auprc_hi": 0.8136,
+      "auprc_baseline": 0.293,
+      "auprc_lift": 0.503
+    }
+  ],
+  "partition_chromosomes": {
+    "training": [
+      "1",
+      "4",
+      "7",
+      "8",
+      "10",
+      "13",
+      "15"
+    ],
+    "validation": [
+      "2",
+      "5",
+      "11",
+      "14",
+      "17",
+      "20",
+      "22",
+      "X"
+    ],
+    "held_out": [
+      "3",
+      "6",
+      "9",
+      "12",
+      "16",
+      "18",
+      "19",
+      "21",
+      "Y"
+    ]
+  },
+  "chrY_variants": 1,
+  "primary_held_out": {
+    "n": 14021,
+    "events": 2145,
+    "non_events": 11876,
+    "prevalence": 0.153,
+    "auroc": 0.9498,
+    "auroc_lo": 0.9452,
+    "auroc_hi": 0.9543,
+    "auprc": 0.8047,
+    "auprc_lo": 0.7886,
+    "auprc_hi": 0.8211,
+    "auprc_baseline": 0.153,
+    "auprc_lift": 0.6517
+  },
+  "distributions_held_out": {
+    "pos_median": 1.486,
+    "pos_q1": 1.255,
+    "pos_q3": 1.664,
+    "neg_median": 0.277,
+    "neg_q1": 0.032,
+    "neg_q3": 0.635,
+    "mannwhitney_p": "<0.001",
+    "cliffs_delta": 0.8995
+  },
+  "by_consequence": [
+    {
+      "consequence": "Missense",
+      "n": 21353,
+      "events": 5478,
+      "non_events": 15875,
+      "prevalence": 0.2565,
+      "auroc": 0.9102,
+      "auroc_lo": 0.9055,
+      "auroc_hi": 0.9145,
+      "auprc": 0.775,
+      "auprc_lo": 0.7637,
+      "auprc_hi": 0.7863,
+      "auprc_baseline": 0.2565,
+      "auprc_lift": 0.5185,
+      "status": NaN,
+      "main_table": true
+    },
+    {
+      "consequence": "Synonymous",
+      "n": 9899,
+      "events": 67,
+      "non_events": 9832,
+      "prevalence": 0.0068,
+      "auroc": 0.9698,
+      "auroc_lo": 0.9491,
+      "auroc_hi": 0.9881,
+      "auprc": 0.7007,
+      "auprc_lo": 0.6046,
+      "auprc_hi": 0.8002,
+      "auprc_baseline": 0.0068,
+      "auprc_lift": 0.6939,
+      "status": NaN,
+      "main_table": true
+    },
+    {
+      "consequence": "Intronic",
+      "n": 6918,
+      "events": 435,
+      "non_events": 6483,
+      "prevalence": 0.0629,
+      "auroc": 0.9714,
+      "auroc_lo": 0.9614,
+      "auroc_hi": 0.9798,
+      "auprc": 0.8409,
+      "auprc_lo": 0.8049,
+      "auprc_hi": 0.8734,
+      "auprc_baseline": 0.0629,
+      "auprc_lift": 0.778,
+      "status": NaN,
+      "main_table": true
+    },
+    {
+      "consequence": "3' UTR",
+      "n": 1852,
+      "events": 2,
+      "non_events": 1850,
+      "prevalence": 0.0011,
+      "auroc": 0.9986,
+      "auroc_lo": 0.9962,
+      "auroc_hi": 1.0,
+      "auprc": 0.4167,
+      "auprc_lo": 0.2222,
+      "auprc_hi": 1.0,
+      "auprc_baseline": 0.0011,
+      "auprc_lift": 0.4156,
+      "status": NaN,
+      "main_table": false
+    },
+    {
+      "consequence": "Nonsense",
+      "n": 1049,
+      "events": 992,
+      "non_events": 57,
+      "prevalence": 0.9457,
+      "auroc": 0.717,
+      "auroc_lo": 0.634,
+      "auroc_hi": 0.7934,
+      "auprc": 0.9721,
+      "auprc_lo": 0.9608,
+      "auprc_hi": 0.982,
+      "auprc_baseline": 0.9457,
+      "auprc_lift": 0.0264,
+      "status": NaN,
+      "main_table": true
+    },
+    {
+      "consequence": "Splice donor",
+      "n": 402,
+      "events": 385,
+      "non_events": 17,
+      "prevalence": 0.9577,
+      "auroc": 0.839,
+      "auroc_lo": 0.7305,
+      "auroc_hi": 0.9249,
+      "auprc": 0.9908,
+      "auprc_lo": 0.9834,
+      "auprc_hi": 0.9964,
+      "auprc_baseline": 0.9577,
+      "auprc_lift": 0.0331,
+      "status": NaN,
+      "main_table": false
+    },
+    {
+      "consequence": "5' UTR",
+      "n": 334,
+      "events": 10,
+      "non_events": 324,
+      "prevalence": 0.0299,
+      "auroc": 0.8765,
+      "auroc_lo": 0.7419,
+      "auroc_hi": 0.9719,
+      "auprc": 0.2656,
+      "auprc_lo": 0.1316,
+      "auprc_hi": 0.5789,
+      "auprc_baseline": 0.0299,
+      "auprc_lift": 0.2356,
+      "status": NaN,
+      "main_table": false
+    },
+    {
+      "consequence": "Splice acceptor",
+      "n": 334,
+      "events": 312,
+      "non_events": 22,
+      "prevalence": 0.9341,
+      "auroc": 0.7558,
+      "auroc_lo": 0.6188,
+      "auroc_hi": 0.8701,
+      "auprc": 0.9716,
+      "auprc_lo": 0.9535,
+      "auprc_hi": 0.9873,
+      "auprc_baseline": 0.9341,
+      "auprc_lift": 0.0375,
+      "status": NaN,
+      "main_table": true
+    },
+    {
+      "consequence": "Unannotated",
+      "n": 145,
+      "events": 9,
+      "non_events": 136,
+      "prevalence": 0.0621,
+      "auroc": 0.9101,
+      "auroc_lo": 0.8423,
+      "auroc_hi": 0.9608,
+      "auprc": 0.4108,
+      "auprc_lo": 0.2211,
+      "auprc_hi": 0.6833,
+      "auprc_baseline": 0.0621,
+      "auprc_lift": 0.3488,
+      "status": NaN,
+      "main_table": false
+    },
+    {
+      "consequence": "Start lost",
+      "n": 73,
+      "events": 56,
+      "non_events": 17,
+      "prevalence": 0.7671,
+      "auroc": 0.812,
+      "auroc_lo": 0.6785,
+      "auroc_hi": 0.9202,
+      "auprc": 0.9293,
+      "auprc_lo": 0.8748,
+      "auprc_hi": 0.9755,
+      "auprc_baseline": 0.7671,
+      "auprc_lift": 0.1621,
+      "status": NaN,
+      "main_table": false
+    },
+    {
+      "consequence": "Stop lost",
+      "n": 15,
+      "events": 13,
+      "non_events": 2,
+      "prevalence": 0.8667,
+      "auroc": 1.0,
+      "auroc_lo": 1.0,
+      "auroc_hi": 1.0,
+      "auprc": 1.0,
+      "auprc_lo": 1.0,
+      "auprc_hi": 1.0,
+      "auprc_baseline": 0.8667,
+      "auprc_lift": 0.1333,
+      "status": NaN,
+      "main_table": false
+    },
+    {
+      "consequence": "Non-coding transcript",
+      "n": 5,
+      "events": 1,
+      "non_events": 4,
+      "prevalence": 0.2,
+      "auroc": 0.5,
+      "auroc_lo": 0.0,
+      "auroc_hi": 1.0,
+      "auprc": 0.3333,
+      "auprc_lo": 0.2,
+      "auprc_hi": 1.0,
+      "auprc_baseline": 0.2,
+      "auprc_lift": 0.1333,
+      "status": NaN,
+      "main_table": false
+    },
+    {
+      "consequence": "Other",
+      "n": 4,
+      "events": 0,
+      "non_events": 4,
+      "prevalence": 0.0,
+      "auroc": NaN,
+      "auroc_lo": NaN,
+      "auroc_hi": NaN,
+      "auprc": NaN,
+      "auprc_lo": NaN,
+      "auprc_hi": NaN,
+      "auprc_baseline": NaN,
+      "auprc_lift": NaN,
+      "status": "single_class_not_evaluable",
+      "main_table": false
+    }
+  ],
+  "consequence_prior": {
+    "n": 42383,
+    "events": 7760,
+    "non_events": 34623,
+    "prevalence": 0.1831,
+    "auroc": 0.627,
+    "auroc_lo": 0.6209,
+    "auroc_hi": 0.633,
+    "auprc": 0.4518,
+    "auprc_lo": 0.4445,
+    "auprc_hi": 0.4589,
+    "auprc_baseline": 0.1831,
+    "auprc_lift": 0.2687,
+    "avi_minus_prior": 0.3291,
+    "delong_p": 0.0,
+    "delong_ci": [
+      0.3232,
+      0.3351
+    ]
+  },
+  "consequence_stratified_auroc": 0.9124,
+  "frequency": {
+    "genomes_faf95": {
+      "field": "fafmax_faf95_max",
+      "n": 35105,
+      "absent_imputed": 19137,
+      "avi_overall": {
+        "n": 35105,
+        "events": 7006,
+        "non_events": 28099,
+        "prevalence": 0.1996,
+        "auroc": 0.9602,
+        "auroc_lo": 0.958,
+        "auroc_hi": 0.9624,
+        "auprc": 0.8636,
+        "auprc_lo": 0.8563,
+        "auprc_hi": 0.8711,
+        "auprc_baseline": 0.1996,
+        "auprc_lift": 0.664
+      },
+      "af_overall": {
+        "n": 35105,
+        "events": 7006,
+        "non_events": 28099,
+        "prevalence": 0.1996,
+        "auroc": 0.742,
+        "auroc_lo": 0.738,
+        "auroc_hi": 0.7459,
+        "auprc": 0.3311,
+        "auprc_lo": 0.3278,
+        "auprc_hi": 0.3343,
+        "auprc_baseline": 0.1996,
+        "auprc_lift": 0.1315
+      },
+      "avi_vs_af": {
+        "difference": 0.2182,
+        "se": 0.00221,
+        "p": 0.0,
+        "ci": [
+          0.2138,
+          0.2225
+        ]
+      },
+      "avi_held_out": {
+        "n": 11433,
+        "events": 1911,
+        "non_events": 9522,
+        "prevalence": 0.1671,
+        "auroc": 0.9534,
+        "auroc_lo": 0.9487,
+        "auroc_hi": 0.9579,
+        "auprc": 0.8279,
+        "auprc_lo": 0.8121,
+        "auprc_hi": 0.8435,
+        "auprc_baseline": 0.1671,
+        "auprc_lift": 0.6608
+      },
+      "af_held_out": {
+        "n": 11433,
+        "events": 1911,
+        "non_events": 9522,
+        "prevalence": 0.1671,
+        "auroc": 0.7458,
+        "auroc_lo": 0.7386,
+        "auroc_hi": 0.7531,
+        "auprc": 0.2888,
+        "auprc_lo": 0.2833,
+        "auprc_hi": 0.2945,
+        "auprc_baseline": 0.1671,
+        "auprc_lift": 0.1216
+      },
+      "af_bands": [
+        {
+          "band": "1e-4_to_<1e-3",
+          "avi": {
+            "n": 3503,
+            "events": 59,
+            "non_events": 3444,
+            "prevalence": 0.0168,
+            "auroc": 0.8528,
+            "auroc_lo": 0.8102,
+            "auroc_hi": 0.8923,
+            "auprc": 0.246,
+            "auprc_lo": 0.1447,
+            "auprc_hi": 0.3832,
+            "auprc_baseline": 0.0168,
+            "auprc_lift": 0.2292
+          },
+          "af": {
+            "n": 3503,
+            "events": 59,
+            "non_events": 3444,
+            "prevalence": 0.0168,
+            "auroc": 0.5483,
+            "auroc_lo": 0.473,
+            "auroc_hi": 0.6275,
+            "auprc": 0.0214,
+            "auprc_lo": 0.0172,
+            "auprc_hi": 0.0328,
+            "auprc_baseline": 0.0168,
+            "auprc_lift": 0.0046
+          }
+        },
+        {
+          "band": "1e-5_to_<1e-4",
+          "avi": {
+            "n": 6201,
+            "events": 305,
+            "non_events": 5896,
+            "prevalence": 0.0492,
+            "auroc": 0.9193,
+            "auroc_lo": 0.9036,
+            "auroc_hi": 0.9333,
+            "auprc": 0.5165,
+            "auprc_lo": 0.4596,
+            "auprc_hi": 0.5752,
+            "auprc_baseline": 0.0492,
+            "auprc_lift": 0.4673
+          },
+          "af": {
+            "n": 6201,
+            "events": 305,
+            "non_events": 5896,
+            "prevalence": 0.0492,
+            "auroc": 0.5687,
+            "auroc_lo": 0.5362,
+            "auroc_hi": 0.5975,
+            "auprc": 0.0608,
+            "auprc_lo": 0.0547,
+            "auprc_hi": 0.0677,
+            "auprc_baseline": 0.0492,
+            "auprc_lift": 0.0116
+          }
+        },
+        {
+          "band": ">=1e-3",
+          "avi": {
+            "n": 3721,
+            "events": 14,
+            "non_events": 3707,
+            "prevalence": 0.0038,
+            "auroc": 0.7939,
+            "auroc_lo": 0.6243,
+            "auroc_hi": 0.9169,
+            "auprc": 0.1124,
+            "auprc_lo": 0.0293,
+            "auprc_hi": 0.3178,
+            "auprc_baseline": 0.0038,
+            "auprc_lift": 0.1087
+          },
+          "af": {
+            "n": 3721,
+            "events": 14,
+            "non_events": 3707,
+            "prevalence": 0.0038,
+            "auroc": 0.6923,
+            "auroc_lo": 0.5603,
+            "auroc_hi": 0.8138,
+            "auprc": 0.0073,
+            "auprc_lo": 0.0054,
+            "auprc_hi": 0.0129,
+            "auprc_baseline": 0.0038,
+            "auprc_lift": 0.0035
+          }
+        },
+        {
+          "band": "absent",
+          "avi": {
+            "n": 19137,
+            "events": 6416,
+            "non_events": 12721,
+            "prevalence": 0.3353,
+            "auroc": 0.9599,
+            "auroc_lo": 0.9572,
+            "auroc_hi": 0.9626,
+            "auprc": 0.9147,
+            "auprc_lo": 0.9093,
+            "auprc_hi": 0.9206,
+            "auprc_baseline": 0.3353,
+            "auprc_lift": 0.5795
+          },
+          "af": {
+            "n": 19137,
+            "events": 6416,
+            "non_events": 12721,
+            "prevalence": 0.3353,
+            "auroc": 0.5,
+            "auroc_lo": 0.5,
+            "auroc_hi": 0.5,
+            "auprc": 0.3353,
+            "auprc_lo": 0.3353,
+            "auprc_hi": 0.3353,
+            "auprc_baseline": 0.3353,
+            "auprc_lift": 0.0
+          }
+        },
+        {
+          "band": "observed_<1e-5",
+          "avi": {
+            "n": 2543,
+            "events": 212,
+            "non_events": 2331,
+            "prevalence": 0.0834,
+            "auroc": 0.9185,
+            "auroc_lo": 0.8998,
+            "auroc_hi": 0.9359,
+            "auprc": 0.5947,
+            "auprc_lo": 0.5363,
+            "auprc_hi": 0.6668,
+            "auprc_baseline": 0.0834,
+            "auprc_lift": 0.5113
+          },
+          "af": {
+            "n": 2543,
+            "events": 212,
+            "non_events": 2331,
+            "prevalence": 0.0834,
+            "auroc": 0.5336,
+            "auroc_lo": 0.4974,
+            "auroc_hi": 0.5721,
+            "auprc": 0.0909,
+            "auprc_lo": 0.0838,
+            "auprc_hi": 0.0994,
+            "auprc_baseline": 0.0834,
+            "auprc_lift": 0.0075
+          }
+        }
+      ],
+      "af_matched": {
+        "n": 14012,
+        "events": 7006,
+        "non_events": 7006,
+        "prevalence": 0.5,
+        "auroc": 0.9564,
+        "auroc_lo": 0.9533,
+        "auroc_hi": 0.9597,
+        "auprc": 0.9506,
+        "auprc_lo": 0.9465,
+        "auprc_hi": 0.9549,
+        "auprc_baseline": 0.5,
+        "auprc_lift": 0.4506
+      },
+      "af_matched_af_baseline": {
+        "n": 14012,
+        "events": 7006,
+        "non_events": 7006,
+        "prevalence": 0.5,
+        "auroc": 0.5,
+        "auroc_lo": 0.4955,
+        "auroc_hi": 0.5048,
+        "auprc": 0.5,
+        "auprc_lo": 0.4977,
+        "auprc_hi": 0.5025,
+        "auprc_baseline": 0.5,
+        "auprc_lift": 0.0
+      },
+      "af_matched_consequence_stratified_auroc": 0.906,
+      "af_matched_within_consequence": [
+        {
+          "consequence": "Intronic",
+          "n": 2101,
+          "events": 397,
+          "prevalence": 0.189,
+          "auroc": 0.9759
+        },
+        {
+          "consequence": "Missense",
+          "n": 7860,
+          "events": 4977,
+          "prevalence": 0.6332,
+          "auroc": 0.9024
+        },
+        {
+          "consequence": "Nonsense",
+          "n": 896,
+          "events": 883,
+          "prevalence": 0.9855,
+          "auroc": 0.7523
+        },
+        {
+          "consequence": "Splice acceptor",
+          "n": 291,
+          "events": 284,
+          "prevalence": 0.9759,
+          "auroc": 0.7384
+        },
+        {
+          "consequence": "Splice donor",
+          "n": 338,
+          "events": 331,
+          "prevalence": 0.9793,
+          "auroc": 0.8213
+        },
+        {
+          "consequence": "Start lost",
+          "n": 55,
+          "events": 48,
+          "prevalence": 0.8727,
+          "auroc": 0.7857
+        },
+        {
+          "consequence": "Synonymous",
+          "n": 2399,
+          "events": 55,
+          "prevalence": 0.0229,
+          "auroc": 0.9574
+        }
+      ],
+      "af_matched_composition": {
+        "Missense": 7860,
+        "Synonymous": 2399,
+        "Intronic": 2101,
+        "Nonsense": 896,
+        "Splice donor": 338,
+        "Splice acceptor": 291,
+        "Start lost": 55,
+        "5' UTR": 26,
+        "3' UTR": 17,
+        "Unannotated": 14,
+        "Stop lost": 13,
+        "Other": 1,
+        "Non-coding transcript": 1
+      }
+    },
+    "joint_faf95": {
+      "field": "fafmax_faf95_max_joint",
+      "n": 37044,
+      "absent_imputed": 8968,
+      "avi_overall": {
+        "n": 37044,
+        "events": 6561,
+        "non_events": 30483,
+        "prevalence": 0.1771,
+        "auroc": 0.9555,
+        "auroc_lo": 0.9529,
+        "auroc_hi": 0.9579,
+        "auprc": 0.8372,
+        "auprc_lo": 0.8289,
+        "auprc_hi": 0.8452,
+        "auprc_baseline": 0.1771,
+        "auprc_lift": 0.6601
+      },
+      "af_overall": {
+        "n": 37044,
+        "events": 6561,
+        "non_events": 30483,
+        "prevalence": 0.1771,
+        "auroc": 0.8403,
+        "auroc_lo": 0.8357,
+        "auroc_hi": 0.8451,
+        "auprc": 0.4709,
+        "auprc_lo": 0.4632,
+        "auprc_hi": 0.4784,
+        "auprc_baseline": 0.1771,
+        "auprc_lift": 0.2938
+      },
+      "avi_vs_af": {
+        "difference": 0.1152,
+        "se": 0.00255,
+        "p": 0.0,
+        "ci": [
+          0.1102,
+          0.1202
+        ]
+      },
+      "avi_held_out": {
+        "n": 12171,
+        "events": 1776,
+        "non_events": 10395,
+        "prevalence": 0.1459,
+        "auroc": 0.9494,
+        "auroc_lo": 0.9445,
+        "auroc_hi": 0.9541,
+        "auprc": 0.799,
+        "auprc_lo": 0.7812,
+        "auprc_hi": 0.8169,
+        "auprc_baseline": 0.1459,
+        "auprc_lift": 0.6531
+      },
+      "af_held_out": {
+        "n": 12171,
+        "events": 1776,
+        "non_events": 10395,
+        "prevalence": 0.1459,
+        "auroc": 0.844,
+        "auroc_lo": 0.8351,
+        "auroc_hi": 0.8532,
+        "auprc": 0.4397,
+        "auprc_lo": 0.4255,
+        "auprc_hi": 0.4546,
+        "auprc_baseline": 0.1459,
+        "auprc_lift": 0.2937
+      },
+      "af_bands": [
+        {
+          "band": "1e-4_to_<1e-3",
+          "avi": {
+            "n": 5549,
+            "events": 141,
+            "non_events": 5408,
+            "prevalence": 0.0254,
+            "auroc": 0.8623,
+            "auroc_lo": 0.8296,
+            "auroc_hi": 0.8908,
+            "auprc": 0.2591,
+            "auprc_lo": 0.197,
+            "auprc_hi": 0.357,
+            "auprc_baseline": 0.0254,
+            "auprc_lift": 0.2337
+          },
+          "af": {
+            "n": 5549,
+            "events": 141,
+            "non_events": 5408,
+            "prevalence": 0.0254,
+            "auroc": 0.602,
+            "auroc_lo": 0.5585,
+            "auroc_hi": 0.6456,
+            "auprc": 0.0398,
+            "auprc_lo": 0.0323,
+            "auprc_hi": 0.0587,
+            "auprc_baseline": 0.0254,
+            "auprc_lift": 0.0143
+          }
+        },
+        {
+          "band": "1e-5_to_<1e-4",
+          "avi": {
+            "n": 10069,
+            "events": 619,
+            "non_events": 9450,
+            "prevalence": 0.0615,
+            "auroc": 0.9206,
+            "auroc_lo": 0.9114,
+            "auroc_hi": 0.931,
+            "auprc": 0.5531,
+            "auprc_lo": 0.5135,
+            "auprc_hi": 0.5934,
+            "auprc_baseline": 0.0615,
+            "auprc_lift": 0.4916
+          },
+          "af": {
+            "n": 10069,
+            "events": 619,
+            "non_events": 9450,
+            "prevalence": 0.0615,
+            "auroc": 0.5593,
+            "auroc_lo": 0.5376,
+            "auroc_hi": 0.5821,
+            "auprc": 0.0719,
+            "auprc_lo": 0.0669,
+            "auprc_hi": 0.0795,
+            "auprc_baseline": 0.0615,
+            "auprc_lift": 0.0105
+          }
+        },
+        {
+          "band": ">=1e-3",
+          "avi": {
+            "n": 4036,
+            "events": 17,
+            "non_events": 4019,
+            "prevalence": 0.0042,
+            "auroc": 0.8388,
+            "auroc_lo": 0.6841,
+            "auroc_hi": 0.9681,
+            "auprc": 0.2366,
+            "auprc_lo": 0.0727,
+            "auprc_hi": 0.4832,
+            "auprc_baseline": 0.0042,
+            "auprc_lift": 0.2324
+          },
+          "af": {
+            "n": 4036,
+            "events": 17,
+            "non_events": 4019,
+            "prevalence": 0.0042,
+            "auroc": 0.7519,
+            "auroc_lo": 0.6253,
+            "auroc_hi": 0.8593,
+            "auprc": 0.017,
+            "auprc_lo": 0.0089,
+            "auprc_hi": 0.0501,
+            "auprc_baseline": 0.0042,
+            "auprc_lift": 0.0128
+          }
+        },
+        {
+          "band": "absent",
+          "avi": {
+            "n": 8968,
+            "events": 4637,
+            "non_events": 4331,
+            "prevalence": 0.5171,
+            "auroc": 0.9651,
+            "auroc_lo": 0.9618,
+            "auroc_hi": 0.9687,
+            "auprc": 0.9591,
+            "auprc_lo": 0.9543,
+            "auprc_hi": 0.9644,
+            "auprc_baseline": 0.5171,
+            "auprc_lift": 0.4421
+          },
+          "af": {
+            "n": 8968,
+            "events": 4637,
+            "non_events": 4331,
+            "prevalence": 0.5171,
+            "auroc": 0.5,
+            "auroc_lo": 0.5,
+            "auroc_hi": 0.5,
+            "auprc": 0.5171,
+            "auprc_lo": 0.5171,
+            "auprc_hi": 0.5171,
+            "auprc_baseline": 0.5171,
+            "auprc_lift": 0.0
+          }
+        },
+        {
+          "band": "observed_<1e-5",
+          "avi": {
+            "n": 8422,
+            "events": 1147,
+            "non_events": 7275,
+            "prevalence": 0.1362,
+            "auroc": 0.9301,
+            "auroc_lo": 0.9227,
+            "auroc_hi": 0.9374,
+            "auprc": 0.7198,
+            "auprc_lo": 0.6966,
+            "auprc_hi": 0.7446,
+            "auprc_baseline": 0.1362,
+            "auprc_lift": 0.5836
+          },
+          "af": {
+            "n": 8422,
+            "events": 1147,
+            "non_events": 7275,
+            "prevalence": 0.1362,
+            "auroc": 0.5898,
+            "auroc_lo": 0.5722,
+            "auroc_hi": 0.6066,
+            "auprc": 0.1773,
+            "auprc_lo": 0.1676,
+            "auprc_hi": 0.1881,
+            "auprc_baseline": 0.1362,
+            "auprc_lift": 0.0411
+          }
+        }
+      ],
+      "af_matched": {
+        "n": 12510,
+        "events": 6255,
+        "non_events": 6255,
+        "prevalence": 0.5,
+        "auroc": 0.955,
+        "auroc_lo": 0.9514,
+        "auroc_hi": 0.9585,
+        "auprc": 0.9485,
+        "auprc_lo": 0.9432,
+        "auprc_hi": 0.9533,
+        "auprc_baseline": 0.5,
+        "auprc_lift": 0.4485
+      },
+      "af_matched_af_baseline": {
+        "n": 12510,
+        "events": 6255,
+        "non_events": 6255,
+        "prevalence": 0.5,
+        "auroc": 0.5007,
+        "auroc_lo": 0.4928,
+        "auroc_hi": 0.5089,
+        "auprc": 0.5003,
+        "auprc_lo": 0.4957,
+        "auprc_hi": 0.5051,
+        "auprc_baseline": 0.5,
+        "auprc_lift": 0.0003
+      },
+      "af_matched_consequence_stratified_auroc": 0.9015,
+      "af_matched_within_consequence": [
+        {
+          "consequence": "Intronic",
+          "n": 1949,
+          "events": 362,
+          "prevalence": 0.1857,
+          "auroc": 0.9667
+        },
+        {
+          "consequence": "Missense",
+          "n": 6931,
+          "events": 4479,
+          "prevalence": 0.6462,
+          "auroc": 0.8977
+        },
+        {
+          "consequence": "Nonsense",
+          "n": 778,
+          "events": 763,
+          "prevalence": 0.9807,
+          "auroc": 0.7083
+        },
+        {
+          "consequence": "Splice acceptor",
+          "n": 240,
+          "events": 238,
+          "prevalence": 0.9917,
+          "auroc": 0.792
+        },
+        {
+          "consequence": "Splice donor",
+          "n": 290,
+          "events": 285,
+          "prevalence": 0.9828,
+          "auroc": 0.8849
+        },
+        {
+          "consequence": "Synonymous",
+          "n": 2200,
+          "events": 58,
+          "prevalence": 0.0264,
+          "auroc": 0.9601
+        }
+      ],
+      "af_matched_composition": {
+        "Missense": 6931,
+        "Synonymous": 2200,
+        "Intronic": 1949,
+        "Nonsense": 778,
+        "Splice donor": 290,
+        "Splice acceptor": 240,
+        "Start lost": 49,
+        "3' UTR": 26,
+        "5' UTR": 19,
+        "Unannotated": 17,
+        "Stop lost": 11
+      }
+    }
+  },
+  "four_way": {
+    "n": 19926,
+    "events": 5192,
+    "prevalence": 0.2606,
+    "composition": {
+      "Missense": 19900,
+      "Start lost": 9,
+      "Unannotated": 5,
+      "Splice donor": 4,
+      "5' UTR": 2,
+      "Synonymous": 1,
+      "Stop lost": 1,
+      "Nonsense": 1,
+      "Intronic": 1,
+      "Other": 1,
+      "Splice acceptor": 1
+    },
+    "predictors": {
+      "avi": {
+        "label": "AlphaGenome AVI",
+        "n": 19926,
+        "events": 5192,
+        "non_events": 14734,
+        "prevalence": 0.2606,
+        "auroc": 0.9098,
+        "auroc_lo": 0.9052,
+        "auroc_hi": 0.9143,
+        "auprc": 0.779,
+        "auprc_lo": 0.7678,
+        "auprc_hi": 0.7902,
+        "auprc_baseline": 0.2606,
+        "auprc_lift": 0.5185
+      },
+      "am_pathogenicity": {
+        "label": "AlphaMissense",
+        "n": 19926,
+        "events": 5192,
+        "non_events": 14734,
+        "prevalence": 0.2606,
+        "auroc": 0.9238,
+        "auroc_lo": 0.9195,
+        "auroc_hi": 0.9278,
+        "auprc": 0.832,
+        "auprc_lo": 0.8231,
+        "auprc_hi": 0.8405,
+        "auprc_baseline": 0.2606,
+        "auprc_lift": 0.5714
+      },
+      "cadd_phred": {
+        "label": "CADD",
+        "n": 19926,
+        "events": 5192,
+        "non_events": 14734,
+        "prevalence": 0.2606,
+        "auroc": 0.842,
+        "auroc_lo": 0.8361,
+        "auroc_hi": 0.8479,
+        "auprc": 0.6075,
+        "auprc_lo": 0.5945,
+        "auprc_hi": 0.6198,
+        "auprc_baseline": 0.2606,
+        "auprc_lift": 0.347
+      },
+      "revel_score": {
+        "label": "REVEL",
+        "n": 19926,
+        "events": 5192,
+        "non_events": 14734,
+        "prevalence": 0.2606,
+        "auroc": 0.9277,
+        "auroc_lo": 0.9235,
+        "auroc_hi": 0.9315,
+        "auprc": 0.8398,
+        "auprc_lo": 0.8305,
+        "auprc_hi": 0.8491,
+        "auprc_baseline": 0.2606,
+        "auprc_lift": 0.5792
+      }
+    },
+    "pairwise": [
+      {
+        "a": "AlphaGenome AVI",
+        "b": "AlphaMissense",
+        "delta": -0.014,
+        "se": 0.0017,
+        "ci": [
+          -0.0173,
+          -0.0107
+        ],
+        "p": 1.721475161024143e-16,
+        "p_holm": 5.164425483072429e-16
+      },
+      {
+        "a": "AlphaGenome AVI",
+        "b": "CADD",
+        "delta": 0.0677,
+        "se": 0.0023,
+        "ci": [
+          0.0632,
+          0.0722
+        ],
+        "p": 3.58194324367902e-190,
+        "p_holm": 2.149165946207412e-189
+      },
+      {
+        "a": "AlphaGenome AVI",
+        "b": "REVEL",
+        "delta": -0.0179,
+        "se": 0.00244,
+        "ci": [
+          -0.0227,
+          -0.0131
+        ],
+        "p": 2.1374585296362754e-13,
+        "p_holm": 4.2749170592725507e-13
+      },
+      {
+        "a": "AlphaMissense",
+        "b": "CADD",
+        "delta": 0.0817,
+        "se": 0.00289,
+        "ci": [
+          0.0761,
+          0.0874
+        ],
+        "p": 1.778575995219418e-176,
+        "p_holm": 7.114303980877671e-176
+      },
+      {
+        "a": "AlphaMissense",
+        "b": "REVEL",
+        "delta": -0.0039,
+        "se": 0.00213,
+        "ci": [
+          -0.0081,
+          0.0003
+        ],
+        "p": 0.0668521672762185,
+        "p_holm": 0.0668521672762185
+      },
+      {
+        "a": "CADD",
+        "b": "REVEL",
+        "delta": -0.0856,
+        "se": 0.00293,
+        "ci": [
+          -0.0914,
+          -0.0799
+        ],
+        "p": 4.37619641519085e-188,
+        "p_holm": 2.188098207595425e-187
+      }
+    ],
+    "spearman": {
+      "AlphaGenome AVI vs AlphaMissense": 0.8665,
+      "AlphaGenome AVI vs CADD": 0.8629,
+      "AlphaGenome AVI vs REVEL": 0.7292,
+      "AlphaMissense vs CADD": 0.7314,
+      "AlphaMissense vs REVEL": 0.7354,
+      "CADD vs REVEL": 0.7013
+    },
+    "coverage": {
+      "avi": {
+        "nonmissing": 42383,
+        "pct": 1.0
+      },
+      "am_pathogenicity": {
+        "nonmissing": 20929,
+        "pct": 0.4938,
+        "pct_of_missense": 0.9787
+      },
+      "revel_score": {
+        "nonmissing": 20968,
+        "pct": 0.4947,
+        "pct_of_missense": 0.9478
+      },
+      "cadd_phred": {
+        "nonmissing": 42383,
+        "pct": 1.0
+      },
+      "spliceai_max_ds": {
+        "nonmissing": 41824,
+        "pct": 0.9868
+      }
+    },
+    "n_missense_in_cohort": 21353
+  },
+  "four_way_held_out": {
+    "n": 6643,
+    "events": 1382,
+    "prevalence": 0.208,
+    "predictors": {
+      "avi": {
+        "label": "AlphaGenome AVI",
+        "n": 6643,
+        "events": 1382,
+        "non_events": 5261,
+        "prevalence": 0.208,
+        "auroc": 0.8952,
+        "auroc_lo": 0.8865,
+        "auroc_hi": 0.9048,
+        "auprc": 0.7001,
+        "auprc_lo": 0.6767,
+        "auprc_hi": 0.7246,
+        "auprc_baseline": 0.208,
+        "auprc_lift": 0.4921
+      },
+      "am_pathogenicity": {
+        "label": "AlphaMissense",
+        "n": 6643,
+        "events": 1382,
+        "non_events": 5261,
+        "prevalence": 0.208,
+        "auroc": 0.9184,
+        "auroc_lo": 0.9103,
+        "auroc_hi": 0.9267,
+        "auprc": 0.7808,
+        "auprc_lo": 0.7618,
+        "auprc_hi": 0.7992,
+        "auprc_baseline": 0.208,
+        "auprc_lift": 0.5727
+      },
+      "cadd_phred": {
+        "label": "CADD",
+        "n": 6643,
+        "events": 1382,
+        "non_events": 5261,
+        "prevalence": 0.208,
+        "auroc": 0.8239,
+        "auroc_lo": 0.8131,
+        "auroc_hi": 0.8355,
+        "auprc": 0.508,
+        "auprc_lo": 0.4862,
+        "auprc_hi": 0.5327,
+        "auprc_baseline": 0.208,
+        "auprc_lift": 0.2999
+      },
+      "revel_score": {
+        "label": "REVEL",
+        "n": 6643,
+        "events": 1382,
+        "non_events": 5261,
+        "prevalence": 0.208,
+        "auroc": 0.9085,
+        "auroc_lo": 0.8999,
+        "auroc_hi": 0.9173,
+        "auprc": 0.7793,
+        "auprc_lo": 0.7598,
+        "auprc_hi": 0.7984,
+        "auprc_baseline": 0.208,
+        "auprc_lift": 0.5713
+      }
+    },
+    "pairwise_vs_avi": [
+      {
+        "a": "AlphaGenome AVI",
+        "b": "AlphaMissense",
+        "delta": -0.0232,
+        "ci": [
+          -0.0295,
+          -0.017
+        ],
+        "p": 4.2266939988121917e-13,
+        "p_holm": 8.453387997624383e-13
+      },
+      {
+        "a": "AlphaGenome AVI",
+        "b": "REVEL",
+        "delta": -0.0134,
+        "ci": [
+          -0.0235,
+          -0.0032
+        ],
+        "p": 0.009710841274336456,
+        "p_holm": 0.009710841274336456
+      },
+      {
+        "a": "AlphaGenome AVI",
+        "b": "CADD",
+        "delta": 0.0712,
+        "ci": [
+          0.0624,
+          0.08
+        ],
+        "p": 2.279619893967174e-56,
+        "p_holm": 6.838859681901521e-56
+      }
+    ]
+  },
+  "splice_exploratory": {
+    "n": 736,
+    "events": 697,
+    "non_events": 39,
+    "prevalence": 0.947,
+    "predictors": {
+      "avi": {
+        "label": "AlphaGenome AVI",
+        "n": 736,
+        "events": 697,
+        "non_events": 39,
+        "prevalence": 0.947,
+        "auroc": 0.7961,
+        "auroc_lo": 0.7145,
+        "auroc_hi": 0.87,
+        "auprc": 0.9832,
+        "auprc_lo": 0.9749,
+        "auprc_hi": 0.9903,
+        "auprc_baseline": 0.947,
+        "auprc_lift": 0.0362
+      },
+      "cadd_phred": {
+        "label": "CADD",
+        "n": 736,
+        "events": 697,
+        "non_events": 39,
+        "prevalence": 0.947,
+        "auroc": 0.7951,
+        "auroc_lo": 0.7012,
+        "auroc_hi": 0.8777,
+        "auprc": 0.9789,
+        "auprc_lo": 0.9674,
+        "auprc_hi": 0.989,
+        "auprc_baseline": 0.947,
+        "auprc_lift": 0.0319
+      },
+      "spliceai_max_ds": {
+        "label": "SpliceAI max delta score",
+        "n": 736,
+        "events": 697,
+        "non_events": 39,
+        "prevalence": 0.947,
+        "auroc": 0.8073,
+        "auroc_lo": 0.7218,
+        "auroc_hi": 0.8791,
+        "auprc": 0.982,
+        "auprc_lo": 0.9725,
+        "auprc_hi": 0.9899,
+        "auprc_baseline": 0.947,
+        "auprc_lift": 0.035
+      }
+    },
+    "pairwise_vs_avi": [
+      {
+        "a": "AlphaGenome AVI",
+        "b": "CADD",
+        "delta": 0.001,
+        "ci": [
+          -0.0815,
+          0.0834
+        ],
+        "p": 0.9818526658347946,
+        "p_holm": 1.0
+      },
+      {
+        "a": "AlphaGenome AVI",
+        "b": "SpliceAI max delta score",
+        "delta": -0.0112,
+        "ci": [
+          -0.0898,
+          0.0673
+        ],
+        "p": 0.7790963290732329,
+        "p_holm": 1.0
+      }
+    ],
+    "interpretation": "Inconclusive: no significant difference detected; equivalence not established."
+  },
+  "operating_points_held_out": [
+    {
+      "criterion": "sensitivity ~80%",
+      "threshold": 1.137,
+      "flagged": 2434,
+      "flagged_pct": 0.1736,
+      "sensitivity": 0.8,
+      "specificity": 0.9395,
+      "ppv": 0.705,
+      "npv": 0.963,
+      "tp": 1716,
+      "fp": 718,
+      "fn": 429,
+      "tn": 11158
+    },
+    {
+      "criterion": "sensitivity ~90%",
+      "threshold": 0.817,
+      "flagged": 3646,
+      "flagged_pct": 0.26,
+      "sensitivity": 0.9002,
+      "specificity": 0.8556,
+      "ppv": 0.5296,
+      "npv": 0.9794,
+      "tp": 1931,
+      "fp": 1715,
+      "fn": 214,
+      "tn": 10161
+    },
+    {
+      "criterion": "sensitivity ~95%",
+      "threshold": 0.633,
+      "flagged": 5033,
+      "flagged_pct": 0.359,
+      "sensitivity": 0.9501,
+      "specificity": 0.7478,
+      "ppv": 0.4049,
+      "npv": 0.9881,
+      "tp": 2038,
+      "fp": 2995,
+      "fn": 107,
+      "tn": 8881
+    },
+    {
+      "criterion": "Youden index maximum",
+      "threshold": 0.873,
+      "flagged": 3325,
+      "flagged_pct": 0.2371,
+      "sensitivity": 0.89,
+      "specificity": 0.8808,
+      "ppv": 0.5741,
+      "npv": 0.9779,
+      "tp": 1909,
+      "fp": 1416,
+      "fn": 236,
+      "tn": 10460
+    },
+    {
+      "criterion": "top 10% of scores",
+      "threshold": 1.457,
+      "flagged": 1403,
+      "flagged_pct": 0.1001,
+      "sensitivity": 0.5427,
+      "specificity": 0.9799,
+      "ppv": 0.8297,
+      "npv": 0.9223,
+      "tp": 1164,
+      "fp": 239,
+      "fn": 981,
+      "tn": 11637
+    },
+    {
+      "criterion": "top 5% of scores",
+      "threshold": 1.613,
+      "flagged": 702,
+      "flagged_pct": 0.0501,
+      "sensitivity": 0.3007,
+      "specificity": 0.9952,
+      "ppv": 0.9188,
+      "npv": 0.8874,
+      "tp": 645,
+      "fp": 57,
+      "fn": 1500,
+      "tn": 11819
+    }
+  ],
+  "enrichment_held_out": {
+    "top_decile_event_rate": 0.8297,
+    "cohort_prevalence": 0.153,
+    "fold": 5.42,
+    "lower_half_event_rate": 0.00471
+  },
+  "sensitivity_held_out": {
+    "single_change_no_reversion": {
+      "n": 10651,
+      "events": 1617,
+      "non_events": 9034,
+      "prevalence": 0.1518,
+      "auroc": 0.9636,
+      "auroc_lo": 0.9592,
+      "auroc_hi": 0.9676,
+      "auprc": 0.8455,
+      "auprc_lo": 0.8289,
+      "auprc_hi": 0.8618,
+      "auprc_baseline": 0.1518,
+      "auprc_lift": 0.6936
+    },
+    "protein_altering": {
+      "n": 7638,
+      "events": 2006,
+      "non_events": 5632,
+      "prevalence": 0.2626,
+      "auroc": 0.913,
+      "auroc_lo": 0.9059,
+      "auroc_hi": 0.9201,
+      "auprc": 0.8124,
+      "auprc_lo": 0.7975,
+      "auprc_hi": 0.8281,
+      "auprc_baseline": 0.2626,
+      "auprc_lift": 0.5498
+    },
+    "one_variant_per_gene": {
+      "n": 1103,
+      "events": 214,
+      "non_events": 889,
+      "prevalence": 0.194,
+      "auroc": 0.9705,
+      "auroc_lo": 0.9585,
+      "auroc_hi": 0.9802,
+      "auprc": 0.909,
+      "auprc_lo": 0.8725,
+      "auprc_hi": 0.9385,
+      "auprc_baseline": 0.194,
+      "auprc_lift": 0.715
+    },
+    "excluding_top10_genes": {
+      "n": 11635,
+      "events": 1927,
+      "non_events": 9708,
+      "prevalence": 0.1656,
+      "auroc": 0.9529,
+      "auroc_lo": 0.9479,
+      "auroc_hi": 0.9572,
+      "auprc": 0.8203,
+      "auprc_lo": 0.8027,
+      "auprc_hi": 0.8358,
+      "auprc_baseline": 0.1656,
+      "auprc_lift": 0.6547
+    }
+  },
+  "genes_held_out": {
+    "n_genes": 1103,
+    "n_ge20": 146,
+    "n_ge20_evaluable": 111,
+    "median_auroc_ge20": 0.9853,
+    "q1": 0.9357,
+    "q3": 1.0
+  },
+  "noncoding_comparison": {
+    "classes_included": [
+      "Synonymous",
+      "Intronic",
+      "3' UTR",
+      "5' UTR",
+      "Non-coding transcript"
+    ],
+    "n": 19008,
+    "events": 515,
+    "prevalence": 0.0271,
+    "alphamissense_coverage": 0.0002,
+    "revel_coverage": 0.0309,
+    "cadd_coverage": 1.0,
+    "spliceai_coverage": 0.9818,
+    "pooled": {
+      "avi": {
+        "n": 19008,
+        "events": 515,
+        "non_events": 18493,
+        "prevalence": 0.0271,
+        "auroc": 0.97,
+        "auroc_lo": 0.9606,
+        "auroc_hi": 0.9779,
+        "auprc": 0.7771,
+        "auprc_lo": 0.7436,
+        "auprc_hi": 0.8116,
+        "auprc_baseline": 0.0271,
+        "auprc_lift": 0.75
+      },
+      "cadd_phred": {
+        "n": 19008,
+        "events": 515,
+        "non_events": 18493,
+        "prevalence": 0.0271,
+        "auroc": 0.8985,
+        "auroc_lo": 0.8795,
+        "auroc_hi": 0.9171,
+        "auprc": 0.4802,
+        "auprc_lo": 0.4358,
+        "auprc_hi": 0.5257,
+        "auprc_baseline": 0.0271,
+        "auprc_lift": 0.4531
+      },
+      "spliceai_max_ds": {
+        "n": 18662,
+        "events": 506,
+        "non_events": 18156,
+        "prevalence": 0.0271,
+        "auroc": 0.954,
+        "auroc_lo": 0.9408,
+        "auroc_hi": 0.966,
+        "auprc": 0.7004,
+        "auprc_lo": 0.6629,
+        "auprc_hi": 0.7391,
+        "auprc_baseline": 0.0271,
+        "auprc_lift": 0.6733
+      }
+    },
+    "spliceai_subset_n": 18662,
+    "pooled_pairwise_vs_avi": [
+      {
+        "a": "AlphaGenome AVI",
+        "b": "cadd_phred",
+        "delta": 0.0715,
+        "se": 0.00906,
+        "ci": [
+          0.0538,
+          0.0893
+        ],
+        "p": 2.9995340346436117e-15,
+        "p_holm": 5.999068069287223e-15
+      },
+      {
+        "a": "AlphaGenome AVI",
+        "b": "spliceai_max_ds",
+        "delta": 0.0186,
+        "se": 0.00584,
+        "ci": [
+          0.0072,
+          0.0301
+        ],
+        "p": 0.001439733045418856,
+        "p_holm": 0.001439733045418856
+      }
+    ],
+    "held_out": {
+      "avi": {
+        "n": 6313,
+        "events": 133,
+        "non_events": 6180,
+        "prevalence": 0.0211,
+        "auroc": 0.9632,
+        "auroc_lo": 0.944,
+        "auroc_hi": 0.9804,
+        "auprc": 0.728,
+        "auprc_lo": 0.6555,
+        "auprc_hi": 0.8021,
+        "auprc_baseline": 0.0211,
+        "auprc_lift": 0.7069
+      },
+      "cadd_phred": {
+        "n": 6313,
+        "events": 133,
+        "non_events": 6180,
+        "prevalence": 0.0211,
+        "auroc": 0.9084,
+        "auroc_lo": 0.8698,
+        "auroc_hi": 0.9427,
+        "auprc": 0.4407,
+        "auprc_lo": 0.3649,
+        "auprc_hi": 0.5299,
+        "auprc_baseline": 0.0211,
+        "auprc_lift": 0.4197
+      }
+    },
+    "held_out_avi_vs_cadd": {
+      "delta": 0.0548,
+      "se": 0.01706,
+      "ci": [
+        0.0214,
+        0.0882
+      ],
+      "p": 0.0013166760048622557
+    },
+    "by_class": [
+      {
+        "consequence": "Synonymous",
+        "n": 9899,
+        "events": 67,
+        "prevalence": 0.0068,
+        "avi": {
+          "n": 9899,
+          "events": 67,
+          "non_events": 9832,
+          "prevalence": 0.0068,
+          "auroc": 0.9698,
+          "auroc_lo": 0.9491,
+          "auroc_hi": 0.9881,
+          "auprc": 0.7007,
+          "auprc_lo": 0.6046,
+          "auprc_hi": 0.8002,
+          "auprc_baseline": 0.0068,
+          "auprc_lift": 0.6939
+        },
+        "cadd_phred": {
+          "n": 9899,
+          "events": 67,
+          "non_events": 9832,
+          "prevalence": 0.0068,
+          "auroc": 0.9355,
+          "auroc_lo": 0.8908,
+          "auroc_hi": 0.9719,
+          "auprc": 0.5477,
+          "auprc_lo": 0.4399,
+          "auprc_hi": 0.6649,
+          "auprc_baseline": 0.0068,
+          "auprc_lift": 0.541
+        },
+        "avi_vs_cadd": {
+          "delta": 0.0343,
+          "ci": [
+            0.0033,
+            0.0652
+          ],
+          "p": 0.029996267861680817
+        }
+      },
+      {
+        "consequence": "Intronic",
+        "n": 6918,
+        "events": 435,
+        "prevalence": 0.0629,
+        "avi": {
+          "n": 6918,
+          "events": 435,
+          "non_events": 6483,
+          "prevalence": 0.0629,
+          "auroc": 0.9714,
+          "auroc_lo": 0.9614,
+          "auroc_hi": 0.9798,
+          "auprc": 0.8409,
+          "auprc_lo": 0.8049,
+          "auprc_hi": 0.8734,
+          "auprc_baseline": 0.0629,
+          "auprc_lift": 0.778
+        },
+        "cadd_phred": {
+          "n": 6918,
+          "events": 435,
+          "non_events": 6483,
+          "prevalence": 0.0629,
+          "auroc": 0.8744,
+          "auroc_lo": 0.853,
+          "auroc_hi": 0.8956,
+          "auprc": 0.5009,
+          "auprc_lo": 0.4576,
+          "auprc_hi": 0.5461,
+          "auprc_baseline": 0.0629,
+          "auprc_lift": 0.438
+        },
+        "avi_vs_cadd": {
+          "delta": 0.097,
+          "ci": [
+            0.0765,
+            0.1175
+          ],
+          "p": 1.8326156753304634e-20
+        }
+      },
+      {
+        "consequence": "3' UTR",
+        "n": 1852,
+        "events": 2,
+        "prevalence": 0.0011,
+        "avi": {
+          "n": 1852,
+          "events": 2,
+          "non_events": 1850,
+          "prevalence": 0.0011,
+          "auroc": 0.9986,
+          "auroc_lo": 0.9962,
+          "auroc_hi": 1.0,
+          "auprc": 0.4167,
+          "auprc_lo": 0.2222,
+          "auprc_hi": 1.0,
+          "auprc_baseline": 0.0011,
+          "auprc_lift": 0.4156
+        },
+        "cadd_phred": {
+          "n": 1852,
+          "events": 2,
+          "non_events": 1850,
+          "prevalence": 0.0011,
+          "auroc": 0.9965,
+          "auroc_lo": 0.9924,
+          "auroc_hi": 1.0,
+          "auprc": 0.2436,
+          "auprc_lo": 0.1176,
+          "auprc_hi": 1.0,
+          "auprc_baseline": 0.0011,
+          "auprc_lift": 0.2425
+        },
+        "avi_vs_cadd": {
+          "delta": 0.0022,
+          "ci": [
+            -0.0046,
+            0.0089
+          ],
+          "p": 0.5296190614487652
+        }
+      },
+      {
+        "consequence": "5' UTR",
+        "n": 334,
+        "events": 10,
+        "prevalence": 0.0299,
+        "avi": {
+          "n": 334,
+          "events": 10,
+          "non_events": 324,
+          "prevalence": 0.0299,
+          "auroc": 0.8765,
+          "auroc_lo": 0.7419,
+          "auroc_hi": 0.9719,
+          "auprc": 0.2656,
+          "auprc_lo": 0.1316,
+          "auprc_hi": 0.5789,
+          "auprc_baseline": 0.0299,
+          "auprc_lift": 0.2356
+        },
+        "cadd_phred": {
+          "n": 334,
+          "events": 10,
+          "non_events": 324,
+          "prevalence": 0.0299,
+          "auroc": 0.7573,
+          "auroc_lo": 0.554,
+          "auroc_hi": 0.9377,
+          "auprc": 0.2566,
+          "auprc_lo": 0.0899,
+          "auprc_hi": 0.5796,
+          "auprc_baseline": 0.0299,
+          "auprc_lift": 0.2267
+        },
+        "avi_vs_cadd": {
+          "delta": 0.1193,
+          "ci": [
+            -0.0405,
+            0.2791
+          ],
+          "p": 0.14349071216592096
+        }
+      },
+      {
+        "consequence": "Non-coding transcript",
+        "n": 5,
+        "events": 1,
+        "prevalence": 0.2,
+        "status": "too_few_events"
+      }
+    ]
+  }
+}

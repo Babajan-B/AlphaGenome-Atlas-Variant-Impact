@@ -1,0 +1,14 @@
+cc,VUS_to_B_LB,VUS_to_P_LP,total,pct_of_cohort,event_rate_pct
+Missense,15875,5478,21353,50.38,25.65
+Synonymous,9832,67,9899,23.36,0.68
+Intronic,6483,435,6918,16.32,6.29
+3' UTR,1850,2,1852,4.37,0.11
+Nonsense,57,992,1049,2.48,94.57
+Splice donor,17,385,402,0.95,95.77
+5' UTR,324,10,334,0.79,2.99
+Splice acceptor,22,312,334,0.79,93.41
+Unannotated,136,9,145,0.34,6.21
+Start lost,17,56,73,0.17,76.71
+Stop lost,2,13,15,0.04,86.67
+Non-coding transcript,4,1,5,0.01,20.0
+Other,4,0,4,0.01,0.0

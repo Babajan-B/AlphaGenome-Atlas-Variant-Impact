@@ -1,0 +1,10 @@
+#!/bin/bash
+#PBS -N AGVUS_gene_audit
+#PBS -q fat
+#PBS -l select=1:ncpus=2:mem=16gb
+#PBS -l walltime=02:00:00
+#PBS -j oe
+set -euo pipefail
+ROOT=/path/to/project_root/AG-VUS
+exec >"$ROOT/logs/objective2_gene_audit.log" 2>&1
+"$ROOT/environment/alphagenome-py310/bin/python" -u /path/to/AG-VUS/scripts/11_gene_provenance_audit.py

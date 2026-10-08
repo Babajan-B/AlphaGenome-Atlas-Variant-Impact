@@ -1,0 +1,15 @@
+#!/bin/bash
+#PBS -N AGVUS_history
+#PBS -q fat
+#PBS -l select=1:ncpus=4:mem=220gb
+#PBS -l walltime=48:00:00
+#PBS -j oe
+set -euo pipefail
+ROOT=/path/to/project_root/AG-VUS
+mkdir -p "$ROOT/tmp/duckdb"
+mkdir -p "$ROOT/logs" "$ROOT/reports"
+exec >"$ROOT/logs/objective1_aggregate_batched.log" 2>&1
+echo "started=$(date --iso-8601=seconds) host=$(hostname)"
+export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1
+"$ROOT/environment/alphagenome-py310/bin/python" /path/to/AG-VUS/scripts/05_build_longitudinal_batched.py --root "$ROOT" --threads 4 --memory-limit 48GB
+echo "completed=$(date --iso-8601=seconds)"

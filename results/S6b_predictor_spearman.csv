@@ -1,0 +1,7 @@
+,spearman_rho
+AlphaGenome AVI vs AlphaMissense,0.8665
+AlphaGenome AVI vs CADD,0.8629
+AlphaGenome AVI vs REVEL,0.7292
+AlphaMissense vs CADD,0.7314
+AlphaMissense vs REVEL,0.7354
+CADD vs REVEL,0.7013

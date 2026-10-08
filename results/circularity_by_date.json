@@ -1,0 +1,197 @@
+{
+  "cutoff": "2023-09-19",
+  "periods": {
+    "before_alphamissense": {
+      "n": 11629,
+      "events": 3041,
+      "first_date": "2017-06-15",
+      "last_date": "2023-09-17",
+      "predictors": {
+        "avi": {
+          "n": 11629,
+          "events": 3041,
+          "non_events": 8588,
+          "prevalence": 0.2615,
+          "auroc": 0.9138,
+          "auroc_lo": 0.9076,
+          "auroc_hi": 0.9198,
+          "auprc": 0.7956,
+          "auprc_lo": 0.7814,
+          "auprc_hi": 0.8094,
+          "auprc_baseline": 0.2615,
+          "auprc_lift": 0.5341
+        },
+        "am_pathogenicity": {
+          "n": 11629,
+          "events": 3041,
+          "non_events": 8588,
+          "prevalence": 0.2615,
+          "auroc": 0.9262,
+          "auroc_lo": 0.9206,
+          "auroc_hi": 0.9318,
+          "auprc": 0.8444,
+          "auprc_lo": 0.8333,
+          "auprc_hi": 0.8552,
+          "auprc_baseline": 0.2615,
+          "auprc_lift": 0.5829
+        },
+        "revel_score": {
+          "n": 11629,
+          "events": 3041,
+          "non_events": 8588,
+          "prevalence": 0.2615,
+          "auroc": 0.9255,
+          "auroc_lo": 0.9199,
+          "auroc_hi": 0.9315,
+          "auprc": 0.8406,
+          "auprc_lo": 0.8286,
+          "auprc_hi": 0.8534,
+          "auprc_baseline": 0.2615,
+          "auprc_lift": 0.5791
+        },
+        "cadd_phred": {
+          "n": 11629,
+          "events": 3041,
+          "non_events": 8588,
+          "prevalence": 0.2615,
+          "auroc": 0.8425,
+          "auroc_lo": 0.8349,
+          "auroc_hi": 0.8504,
+          "auprc": 0.6108,
+          "auprc_lo": 0.595,
+          "auprc_hi": 0.6288,
+          "auprc_baseline": 0.2615,
+          "auprc_lift": 0.3493
+        }
+      },
+      "avi_minus_comparator": [
+        {
+          "comparator": "AlphaMissense",
+          "delta": -0.0123,
+          "ci": [
+            -0.0166,
+            -0.0081
+          ],
+          "p": 9.496864331951708e-09,
+          "p_holm": 1.8993728663903415e-08
+        },
+        {
+          "comparator": "REVEL",
+          "delta": -0.0117,
+          "ci": [
+            -0.018,
+            -0.0053
+          ],
+          "p": 0.0003440922813593752,
+          "p_holm": 0.0003440922813593752
+        },
+        {
+          "comparator": "CADD",
+          "delta": 0.0714,
+          "ci": [
+            0.0653,
+            0.0774
+          ],
+          "p": 1.0755824609183868e-119,
+          "p_holm": 3.2267473827551605e-119
+        }
+      ]
+    },
+    "after_alphamissense": {
+      "n": 8297,
+      "events": 2151,
+      "first_date": "2023-09-23",
+      "last_date": "2026-08-22",
+      "predictors": {
+        "avi": {
+          "n": 8297,
+          "events": 2151,
+          "non_events": 6146,
+          "prevalence": 0.2593,
+          "auroc": 0.9041,
+          "auroc_lo": 0.8964,
+          "auroc_hi": 0.9112,
+          "auprc": 0.7573,
+          "auprc_lo": 0.7389,
+          "auprc_hi": 0.7754,
+          "auprc_baseline": 0.2593,
+          "auprc_lift": 0.4981
+        },
+        "am_pathogenicity": {
+          "n": 8297,
+          "events": 2151,
+          "non_events": 6146,
+          "prevalence": 0.2593,
+          "auroc": 0.9203,
+          "auroc_lo": 0.9133,
+          "auroc_hi": 0.9263,
+          "auprc": 0.8146,
+          "auprc_lo": 0.7996,
+          "auprc_hi": 0.8288,
+          "auprc_baseline": 0.2593,
+          "auprc_lift": 0.5553
+        },
+        "revel_score": {
+          "n": 8297,
+          "events": 2151,
+          "non_events": 6146,
+          "prevalence": 0.2593,
+          "auroc": 0.9311,
+          "auroc_lo": 0.9249,
+          "auroc_hi": 0.937,
+          "auprc": 0.8398,
+          "auprc_lo": 0.8237,
+          "auprc_hi": 0.8535,
+          "auprc_baseline": 0.2593,
+          "auprc_lift": 0.5805
+        },
+        "cadd_phred": {
+          "n": 8297,
+          "events": 2151,
+          "non_events": 6146,
+          "prevalence": 0.2593,
+          "auroc": 0.8414,
+          "auroc_lo": 0.8324,
+          "auroc_hi": 0.8502,
+          "auprc": 0.6032,
+          "auprc_lo": 0.5835,
+          "auprc_hi": 0.6229,
+          "auprc_baseline": 0.2593,
+          "auprc_lift": 0.344
+        }
+      },
+      "avi_minus_comparator": [
+        {
+          "comparator": "AlphaMissense",
+          "delta": -0.0162,
+          "ci": [
+            -0.0216,
+            -0.0108
+          ],
+          "p": 4.272361940412534e-09,
+          "p_holm": 4.272361940412534e-09
+        },
+        {
+          "comparator": "REVEL",
+          "delta": -0.0269,
+          "ci": [
+            -0.0342,
+            -0.0197
+          ],
+          "p": 3.3110916752078554e-13,
+          "p_holm": 6.622183350415711e-13
+        },
+        {
+          "comparator": "CADD",
+          "delta": 0.0627,
+          "ci": [
+            0.0559,
+            0.0695
+          ],
+          "p": 1.1591531632424614e-72,
+          "p_holm": 3.4774594897273844e-72
+        }
+      ]
+    }
+  }
+}

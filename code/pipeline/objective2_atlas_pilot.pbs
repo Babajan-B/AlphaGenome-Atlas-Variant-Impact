@@ -1,0 +1,16 @@
+#!/bin/bash
+#PBS -N AGVUS_AtlasPilot
+#PBS -q fat
+#PBS -l select=1:ncpus=1:mem=16gb
+#PBS -l walltime=08:00:00
+#PBS -j oe
+set -euo pipefail
+ROOT=/path/to/project_root/AG-VUS
+exec >"$ROOT/logs/objective2_atlas_pilot.log" 2>&1
+echo "started=$(date --iso-8601=seconds) host=$(hostname)"
+set -a
+source /path/to/AG-VUS/config/alphagenome.env
+set +a
+export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1
+"$ROOT/environment/alphagenome-py310/bin/python" /path/to/AG-VUS/scripts/07_objective2_atlas_pilot.py --root "$ROOT" --per-cohort 20
+echo "completed=$(date --iso-8601=seconds)"

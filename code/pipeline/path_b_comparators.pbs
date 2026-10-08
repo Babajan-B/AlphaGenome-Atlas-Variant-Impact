@@ -1,0 +1,10 @@
+#!/bin/bash
+#PBS -N AGVUS_PathB_comps
+#PBS -q fat
+#PBS -l select=1:ncpus=2:mem=16gb
+#PBS -l walltime=12:00:00
+#PBS -j oe
+set -euo pipefail
+ROOT=/path/to/project_root/AG-VUS
+exec >"$ROOT/logs/path_b_comparators.log" 2>&1
+"$ROOT/environment/alphagenome-py310/bin/python" -u /path/to/AG-VUS/scripts/17_path_b_comparators.py --root "$ROOT"

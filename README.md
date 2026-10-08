@@ -37,7 +37,7 @@ Comparator scores (AlphaMissense, CADD, REVEL, SpliceAI) are not included becaus
 ### `code/`
 
 - `pipeline/`: release download and parsing, longitudinal reconstruction, reference validation, AlphaGenome querying, comparator annotation, and the PBS job files. Paths are written as `/path/to/project_root` and `/path/to/AG-VUS`. The AlphaGenome API key is read from the `ALPHA_GENOME_API_KEY` environment variable and is not included.
-- `analysis/`: statistics (`stats_v2.py`, `noncoding.py`), the circularity check, and the figure script.
+- `analysis/`: statistics (`stats_v2.py`, `noncoding.py`) and the label-circularity check (`circularity_by_date.py`).
 
 ## Reproducing the analysis
 
@@ -46,7 +46,7 @@ pip install pandas numpy scipy scikit-learn matplotlib pyarrow
 ```
 
 - `results/` holds every reported statistic, so the paper's numbers can be checked without rerunning anything.
-- `code/analysis/` (statistics, circularity check, figures) expects the analysed cohort with comparator scores re-attached. AlphaMissense, CADD, REVEL and SpliceAI scores are not redistributed here; join them to `data/analysed_cohort_42383.csv.gz` on `chrom`, `pos`, `ref`, `alt`, then edit the input paths at the top of each script.
+- `code/analysis/` (statistics and circularity check) expects the analysed cohort with comparator scores re-attached. AlphaMissense, CADD, REVEL and SpliceAI scores are not redistributed here; join them to `data/analysed_cohort_42383.csv.gz` on `chrom`, `pos`, `ref`, `alt`, then edit the input paths at the top of each script.
 - `code/pipeline/` was run on a PBS cluster. Paths are written as `/path/to/project_root`. AlphaGenome queries need an API key in the `ALPHA_GENOME_API_KEY` environment variable.
 
 ## Licence

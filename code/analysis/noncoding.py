@@ -11,7 +11,7 @@ from scipy import stats
 from sklearn.metrics import roc_auc_score, average_precision_score, roc_curve, precision_recall_curve
 
 warnings.filterwarnings("ignore")
-OUT = "/home/claude/analysis2/out"
+OUT = "/path/to/output"
 SEED = 20260918
 NONCODE = ["Synonymous", "Intronic", "3' UTR", "5' UTR", "Non-coding transcript"]
 
@@ -132,7 +132,7 @@ for cc in NONCODE:
     byc.append(row)
 block["by_class"] = byc
 
-# curves for the figure
+# ROC and precision-recall curve coordinates
 cur = {}
 for k, arr, mask in [("avi", nc.avi, np.ones(len(nc), bool)),
                      ("cadd_phred", nc.cadd_phred, np.ones(len(nc), bool)),

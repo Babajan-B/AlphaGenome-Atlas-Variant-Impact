@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Project 9 v2 statistics: independent recomputation of all Path B results
-plus the additions agreed for the rewritten manuscript.
+including the frequency, comparator and sensitivity analyses.
 
 Every figure quoted in the manuscript is produced here from the Path B
 parquet outputs, so the manuscript numbers and the archived tables cannot
@@ -14,8 +14,8 @@ from scipy import stats
 from sklearn.metrics import roc_auc_score, average_precision_score, roc_curve, precision_recall_curve
 
 warnings.filterwarnings("ignore")
-P = "/mnt/user-data/uploads/project9_ag_vus/manuscript/path_b/"
-OUT = "/home/claude/analysis2/out"
+P = "/path/to/project_root/manuscript/path_b/"   # Path B outputs from code/pipeline
+OUT = "/path/to/output"
 os.makedirs(OUT, exist_ok=True)
 NBOOT = 2000
 SEED = 20260918
@@ -389,7 +389,7 @@ R["genes_held_out"] = dict(n_genes=int(len(genes)),
                            q1=round(float(ev.loc[ev.n >= 20, "auroc"].quantile(.25)), 4),
                            q3=round(float(ev.loc[ev.n >= 20, "auroc"].quantile(.75)), 4))
 
-# ============================================================ 8. curve data for figures
+# ============================================================ 8. ROC and precision-recall curve coordinates
 np.save(f"{OUT}/roc_held_out.npy", np.vstack(roc_curve(yh, sh)[:2]))
 pre, rec, _ = precision_recall_curve(yh, sh)
 np.save(f"{OUT}/pr_held_out.npy", np.vstack([rec, pre]))

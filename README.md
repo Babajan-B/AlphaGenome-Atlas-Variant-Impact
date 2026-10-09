@@ -1,8 +1,8 @@
-# Artificial intelligence-based AlphaGenome scores and ClinVar VUS reclassification: data and code
+# Artificial intelligence AlphaGenome Atlas scores and ClinVar VUS reclassification: data and code
 
 This repository benchmarks the AlphaGenome Variant Impact (AVI) score, released with the [AlphaGenome Atlas](https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/), against the later reclassification of ClinVar variants of uncertain significance (VUS).
 
-Data and code for: Banaganapalli B. *Artificial Intelligence-Based AlphaGenome Scores and the Reclassification of ClinVar Variants of Uncertain Significance.* Manuscript submitted for publication.
+Data and code for: Banaganapalli B. *Artificial Intelligence AlphaGenome Atlas Scores and the Reclassification of ClinVar Variants of Uncertain Significance.* Manuscript submitted for publication.
 
 Contact: Babajan Banaganapalli, Department of Genetic Medicine, Faculty of Medicine; Princess Al-Jawhara Center of Excellence in Research of Hereditary Disorders; Center of Excellence in High Performance Computing (Aziz); King Abdulaziz University, Jeddah, Saudi Arabia (bbabajan@kau.edu.sa).
 

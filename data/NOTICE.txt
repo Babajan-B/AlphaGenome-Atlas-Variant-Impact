@@ -1,0 +1,18 @@
+AlphaGenome output notice
+=========================
+
+The column `avi_raw` in analysed_cohort_42383.csv.gz contains AlphaGenome Variant Impact (AVI)
+scores obtained through the AlphaGenome API. These values, and any values derived from them, are
+AlphaGenome output and are provided under and subject to the AlphaGenome Output Terms of Use:
+
+    https://deepmind.google.com/science/alphagenome/output-terms
+
+By using this information, you agree to the AlphaGenome Output Terms of Use. The `avi_raw` column is
+not covered by the CC BY 4.0 licence that applies to the other data columns in this repository.
+
+Please cite:
+- Avsec Z et al. Advancing regulatory variant effect prediction with AlphaGenome. Nature 2026;
+  649: 1206-1218. https://doi.org/10.1038/s41586-025-10014-0
+- Cheng J et al. AlphaGenome Atlas: in silico mutagenesis of the entire human genome improves
+  prioritization and interpretation of non-coding variants. medRxiv 2026.
+  https://doi.org/10.64898/2026.09.16.26363192
